@@ -30,7 +30,7 @@ namespace login_register
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (isbn_textBox.TextLength < 1 || title_textBox.TextLength < 1 || author_textBox.TextLength < 1 || plot_richTextBox.TextLength < 1 || price_textBox.TextLength < 1 || cover_textBox.TextLength < 1)
+            if (isbn_textBox.TextLength < 1 || title_textBox.TextLength < 1 || plot_richTextBox.TextLength < 1 || price_textBox.TextLength < 1 || cover_textBox.TextLength < 1)
             {
                 MessageBox.Show("Please complete all required fields!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -39,7 +39,7 @@ namespace login_register
 
                 string isbn = isbn_textBox.Text;
                 string title = title_textBox.Text;
-                string author = author_textBox.Text;
+                string author = User.GetFullName(); //o user είναι ο συγγραφέας του βιβλίου
                 string plot = plot_richTextBox.Text;
                 float price = float.Parse(price_textBox.Text, CultureInfo.InvariantCulture.NumberFormat);
                 string cover = cover_textBox.Text;

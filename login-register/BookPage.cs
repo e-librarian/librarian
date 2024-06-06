@@ -238,7 +238,7 @@ namespace login_register
             star5.Image = Resources.star_filled;
             stars = 5;
         }
-
+        // Bάλε κριτική 
         private void postReviewButton_Click(object sender, EventArgs e)
         {
             if (stars == 0)

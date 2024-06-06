@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OKuYAm9Sv7o=",
+  "dgSpecHash": "2h+mzT/BiTU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\login-register\\login-register.csproj",
+  "projectFilePath": "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\form\\login-register\\login-register.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chmas\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\chmas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",

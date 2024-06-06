@@ -18,7 +18,7 @@ namespace login_register
         public int stars;
         public DateTime time;
 
-        public Review(int id, string username, string isbn, string text, int stars)
+        public Review(int id, string username, string isbn, string text, int stars, DateTime time)
         {
             this.id = id;
             this.username = username;
@@ -40,7 +40,7 @@ namespace login_register
                 while (reader.Read())
                 {
                     //DateTime timestamp = reader.GetDateTime(reader.GetOrdinal("5"));
-                    Review review = new Review(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4));
+                    Review review = new Review(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4), reader.GetDateTime(5));
                     Reviews.Add(review);
                 }        
             }
