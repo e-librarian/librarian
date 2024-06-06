@@ -12,13 +12,13 @@ namespace login_register
 {
     public class Comment
     {
-        private int Id { get;}
-        private string Username { get;}
-        private string Isbn { get;}
-        private string Text { get;}
-        private bool Is_reply { get;}
-        private int Parent { get;}
-        private DateTime Time { get;}
+        private int Id;
+        private string Username;
+        private string Isbn;
+        private string Text;
+        private bool Is_reply;
+        private int Parent;
+        private DateTime Time;
 
         public Comment(string username, string isbn, string text, bool is_reply, int parent, DateTime time)
         {
@@ -31,6 +31,26 @@ namespace login_register
             this.Time = time;
         }
         
+        public int getID()
+        {
+            return this.Id;
+        }
+        public string getUsername()
+        {
+            return this.Username;
+        }
+        public string getIsbn()
+        {
+            return this.Isbn;
+        }
+        public string getText()
+        {
+            return this.Text;
+        }
+        public DateTime getTime()
+        {
+            return Time;
+        }
         public void InsertComment_toDB()
         {
             string query = "INSERT INTO comments(username, isbn, text, is_reply, parent, time) VALUES (@username, @isbn, @text, @is_reply, @parent, @timestamp)";
@@ -54,34 +74,37 @@ namespace login_register
             }
             MessageBox.Show("You comment has been posted!", "Thank you", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        public static List<Comment[]> getPairs()
+        public static List<Comment[]> getPairs(Book book)
         {
             List < Comment[] > pairs = new List<Comment[]>();
             //παίρνει το καρτεσιανό γινόμενο από το σχόλιο και την απάντηση ,όταν υπάρχει απάντηση
-            string query = "select * from comments as comm left outer join comments as ans on comm.id = ans.parent where ans.id is not null";
+            string query = "select * from comments as comm left outer join comments as ans on comm.id = ans.parent where ans.id is not null and comm.isbn='"+book.isbn+ "' and comm.is_reply = false";
             using NpgsqlConnection connection = DBHandler.OpenConnection();
             using NpgsqlCommand cmd = new NpgsqlCommand(query, connection);
             using NpgsqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
                 Comment comm = new Comment(reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetBoolean(4),reader.GetInt16(5),reader.GetDateTime(6));
+                comm.Id = reader.GetInt16(0);
                 Comment ans = new Comment(reader.GetString(8), reader.GetString(9), reader.GetString(10), reader.GetBoolean(11), reader.GetInt16(12), reader.GetDateTime(13));
+                ans.Id = reader.GetInt16(7);
                 Comment[] pair = { comm, ans };
                 pairs.Add(pair); //πίνακας 2 αντικειμένων, ερώτησης-απάντησης
             }
             return pairs; // επιστρέφεται η λίστα των ζευγών
         }
-        public static List<Comment> getComments() //comments που δεν έχουν απάντηση
+        public static List<Comment> getComments(Book book) //comments που δεν έχουν απάντηση
         {
             List<Comment> comments = new List<Comment>();
 
-            string query = "select * from comments as comm left outer join comments as ans on comm.id = ans.parent where ans.id is null";
+            string query = "select * from comments as comm left outer join comments as ans on comm.id = ans.parent where ans.id is null and comm.isbn='"+book.isbn+ "' and comm.is_reply = false";
             using NpgsqlConnection connection = DBHandler.OpenConnection();
             using NpgsqlCommand cmd = new NpgsqlCommand(query, connection);
             using NpgsqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
                 Comment comm = new Comment(reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetBoolean(4), reader.GetInt16(5), reader.GetDateTime(6));
+                comm.Id = reader.GetInt16(0);
                 comments.Add(comm);
             }
                 return comments;

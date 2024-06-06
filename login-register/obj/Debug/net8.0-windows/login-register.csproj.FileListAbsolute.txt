@@ -214,3 +214,4 @@ C:\Users\chmas\source\repos\1st-Working-Version\form\login-register\obj\Debug\ne
 C:\Users\chmas\source\repos\1st-Working-Version\form\login-register\obj\Debug\net8.0-windows\login-register.pdb
 C:\Users\chmas\source\repos\1st-Working-Version\form\login-register\obj\Debug\net8.0-windows\login-register.genruntimeconfig.cache
 C:\Users\chmas\source\repos\1st-Working-Version\form\login-register\obj\Debug\net8.0-windows\ref\login-register.dll
+C:\Users\chmas\source\repos\1st-Working-Version\form\login-register\obj\Debug\net8.0-windows\login_register.placeHolder.resources
