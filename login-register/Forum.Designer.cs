@@ -28,137 +28,186 @@
         /// </summary>
         private void InitializeComponent()
         {
-            forumLabel1 = new Label();
-            panel1 = new Panel();
-            richTextBox1 = new RichTextBox();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            panel2 = new Panel();
+            timestamp_label = new Label();
+            new_comment = new RichTextBox();
             pictureBox1 = new PictureBox();
+            label3 = new Label();
+            label2 = new Label();
+            postReviewButton = new Button();
+            coverPictureBox = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pfpBox = new PictureBox();
-            usernameLabel = new Label();
-            panel1.SuspendLayout();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)coverPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pfpBox).BeginInit();
             SuspendLayout();
             // 
-            // forumLabel1
+            // flowLayoutPanel1
             // 
-            forumLabel1.AutoSize = true;
-            forumLabel1.Font = new Font("Verdana", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            forumLabel1.ForeColor = Color.FromArgb(73, 60, 52);
-            forumLabel1.Location = new Point(12, 9);
-            forumLabel1.Name = "forumLabel1";
-            forumLabel1.Size = new Size(144, 42);
-            forumLabel1.TabIndex = 0;
-            forumLabel1.Text = "Forum";
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.BackColor = Color.FromArgb(73, 60, 52);
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel1.Location = new Point(696, 37);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(580, 676);
+            flowLayoutPanel1.TabIndex = 1;
+            flowLayoutPanel1.WrapContents = false;
             // 
-            // panel1
+            // panel2
             // 
-            panel1.BackColor = Color.FromArgb(73, 60, 52);
-            panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(richTextBox1);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(pictureBox5);
-            panel1.Controls.Add(pfpBox);
-            panel1.Controls.Add(usernameLabel);
-            panel1.Location = new Point(449, 269);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(375, 179);
-            panel1.TabIndex = 1;
+            panel2.BackColor = Color.FromArgb(73, 60, 52);
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(timestamp_label);
+            panel2.Controls.Add(new_comment);
+            panel2.Controls.Add(pictureBox1);
+            panel2.Controls.Add(label3);
+            panel2.Location = new Point(12, 401);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(477, 184);
+            panel2.TabIndex = 3;
             // 
-            // richTextBox1
+            // timestamp_label
             // 
-            richTextBox1.BackColor = Color.FromArgb(73, 60, 52);
-            richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox1.Font = new Font("Candara", 14.25F, FontStyle.Italic);
-            richTextBox1.ForeColor = Color.PapayaWhip;
-            richTextBox1.Location = new Point(9, 49);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(346, 125);
-            richTextBox1.TabIndex = 34;
-            richTextBox1.Text = "";
+            timestamp_label.AutoSize = true;
+            timestamp_label.BackColor = Color.FromArgb(73, 60, 52);
+            timestamp_label.Cursor = Cursors.Hand;
+            timestamp_label.Font = new Font("Candara", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            timestamp_label.ForeColor = Color.Tan;
+            timestamp_label.Location = new Point(300, 20);
+            timestamp_label.Name = "timestamp_label";
+            timestamp_label.Size = new Size(98, 23);
+            timestamp_label.TabIndex = 35;
+            timestamp_label.Text = "timestamp";
+            // 
+            // new_comment
+            // 
+            new_comment.BackColor = Color.PapayaWhip;
+            new_comment.BorderStyle = BorderStyle.None;
+            new_comment.Font = new Font("Candara", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            new_comment.ForeColor = Color.FromArgb(73, 60, 52);
+            new_comment.Location = new Point(9, 49);
+            new_comment.Name = "new_comment";
+            new_comment.Size = new Size(451, 108);
+            new_comment.TabIndex = 34;
+            new_comment.Text = "";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.star_empty;
-            pictureBox1.Location = new Point(170, 8);
+            pictureBox1.BackColor = Color.FromArgb(73, 60, 52);
+            pictureBox1.Location = new Point(9, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(30, 30);
+            pictureBox1.Size = new Size(40, 40);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 33;
+            pictureBox1.TabIndex = 28;
             pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(73, 60, 52);
+            label3.Cursor = Cursors.Hand;
+            label3.Font = new Font("Candara", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.PapayaWhip;
+            label3.Location = new Point(55, 12);
+            label3.Name = "label3";
+            label3.Size = new Size(65, 26);
+            label3.TabIndex = 27;
+            label3.Text = "label2";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.PapayaWhip;
+            label2.Cursor = Cursors.Hand;
+            label2.Font = new Font("Candara", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(73, 60, 52);
+            label2.Location = new Point(12, 359);
+            label2.Name = "label2";
+            label2.Size = new Size(165, 26);
+            label2.TabIndex = 36;
+            label2.Text = "Make a Question";
+            // 
+            // postReviewButton
+            // 
+            postReviewButton.BackColor = Color.FromArgb(73, 60, 52);
+            postReviewButton.FlatStyle = FlatStyle.Flat;
+            postReviewButton.Font = new Font("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            postReviewButton.ForeColor = Color.PapayaWhip;
+            postReviewButton.Location = new Point(263, 602);
+            postReviewButton.Name = "postReviewButton";
+            postReviewButton.Size = new Size(226, 36);
+            postReviewButton.TabIndex = 37;
+            postReviewButton.Text = "Post";
+            postReviewButton.UseVisualStyleBackColor = false;
+            postReviewButton.Click += postReviewButton_Click;
+            // 
+            // coverPictureBox
+            // 
+            coverPictureBox.BackColor = Color.Black;
+            coverPictureBox.BackgroundImageLayout = ImageLayout.None;
+            coverPictureBox.Image = Properties.Resources._71wM_BB9mtL__AC_UF1000_1000_QL80_;
+            coverPictureBox.Location = new Point(0, -4);
+            coverPictureBox.Name = "coverPictureBox";
+            coverPictureBox.Size = new Size(732, 347);
+            coverPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            coverPictureBox.TabIndex = 38;
+            coverPictureBox.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.star_empty;
-            pictureBox2.Location = new Point(197, 8);
+            pictureBox2.BackColor = Color.Black;
+            pictureBox2.Location = new Point(660, -4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 30);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 32;
+            pictureBox2.Size = new Size(616, 347);
+            pictureBox2.TabIndex = 39;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox3
+            // button1
             // 
-            pictureBox3.Image = Properties.Resources.star_empty;
-            pictureBox3.Location = new Point(223, 8);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(30, 30);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 31;
-            pictureBox3.TabStop = false;
+            button1.BackColor = Color.FromArgb(73, 60, 52);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.PapayaWhip;
+            button1.Location = new Point(696, -2);
+            button1.Name = "button1";
+            button1.Size = new Size(188, 36);
+            button1.TabIndex = 40;
+            button1.Text = "Show Answered";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // pictureBox4
+            // button2
             // 
-            pictureBox4.Image = Properties.Resources.star_empty;
-            pictureBox4.Location = new Point(250, 8);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(30, 30);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 30;
-            pictureBox4.TabStop = false;
+            button2.BackColor = Color.FromArgb(73, 60, 52);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.PapayaWhip;
+            button2.Location = new Point(1096, -2);
+            button2.Name = "button2";
+            button2.Size = new Size(180, 36);
+            button2.TabIndex = 41;
+            button2.Text = "Show Unanswered";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
-            // pictureBox5
+            // button3
             // 
-            pictureBox5.Image = Properties.Resources.star_empty;
-            pictureBox5.Location = new Point(143, 8);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(30, 30);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 29;
-            pictureBox5.TabStop = false;
-            // 
-            // pfpBox
-            // 
-            pfpBox.BackColor = Color.FromArgb(73, 60, 52);
-            pfpBox.Location = new Point(9, 3);
-            pfpBox.Name = "pfpBox";
-            pfpBox.Size = new Size(40, 40);
-            pfpBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            pfpBox.TabIndex = 28;
-            pfpBox.TabStop = false;
-            // 
-            // usernameLabel
-            // 
-            usernameLabel.AutoSize = true;
-            usernameLabel.BackColor = Color.FromArgb(73, 60, 52);
-            usernameLabel.Cursor = Cursors.Hand;
-            usernameLabel.Font = new Font("Candara", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            usernameLabel.ForeColor = Color.PapayaWhip;
-            usernameLabel.Location = new Point(55, 12);
-            usernameLabel.Name = "usernameLabel";
-            usernameLabel.Size = new Size(65, 26);
-            usernameLabel.TabIndex = 27;
-            usernameLabel.Text = "label2";
+            button3.BackColor = Color.FromArgb(73, 60, 52);
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.PapayaWhip;
+            button3.Location = new Point(890, -2);
+            button3.Name = "button3";
+            button3.Size = new Size(200, 36);
+            button3.TabIndex = 42;
+            button3.Text = "Show All";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Forum
             // 
@@ -166,34 +215,40 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PapayaWhip;
             ClientSize = new Size(1273, 716);
-            Controls.Add(panel1);
-            Controls.Add(forumLabel1);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(postReviewButton);
+            Controls.Add(label2);
+            Controls.Add(panel2);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(coverPictureBox);
+            Controls.Add(pictureBox2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Forum";
             Text = "Forum";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)coverPictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pfpBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label forumLabel1;
-        private Panel panel1;
-        private RichTextBox richTextBox1;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel2;
+        private RichTextBox new_comment;
         private PictureBox pictureBox1;
+        private Label label3;
+        private Label label2;
+        private Label timestamp_label;
+        private Button postReviewButton;
+        private PictureBox coverPictureBox;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pfpBox;
-        private Label usernameLabel;
+        private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }

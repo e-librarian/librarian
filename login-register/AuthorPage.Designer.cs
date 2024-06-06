@@ -46,8 +46,6 @@
             isbn_textBox = new TextBox();
             price_label = new Label();
             price_textBox = new TextBox();
-            author_label = new Label();
-            author_textBox = new TextBox();
             category_label = new Label();
             title_label = new Label();
             title_textBox = new TextBox();
@@ -199,18 +197,16 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 34.3158455F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15.6831951F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 34.3158455F));
-            tableLayoutPanel1.Controls.Add(cover_label, 2, 2);
-            tableLayoutPanel1.Controls.Add(cover_textBox, 3, 2);
-            tableLayoutPanel1.Controls.Add(isbn_label, 0, 2);
-            tableLayoutPanel1.Controls.Add(isbn_textBox, 0, 2);
-            tableLayoutPanel1.Controls.Add(price_label, 2, 1);
-            tableLayoutPanel1.Controls.Add(price_textBox, 3, 1);
-            tableLayoutPanel1.Controls.Add(author_label, 0, 1);
-            tableLayoutPanel1.Controls.Add(author_textBox, 1, 1);
-            tableLayoutPanel1.Controls.Add(category_label, 2, 0);
             tableLayoutPanel1.Controls.Add(title_label, 0, 0);
             tableLayoutPanel1.Controls.Add(title_textBox, 1, 0);
-            tableLayoutPanel1.Controls.Add(comboBox1, 3, 0);
+            tableLayoutPanel1.Controls.Add(isbn_label, 0, 1);
+            tableLayoutPanel1.Controls.Add(isbn_textBox, 1, 1);
+            tableLayoutPanel1.Controls.Add(category_label, 0, 2);
+            tableLayoutPanel1.Controls.Add(comboBox1, 1, 2);
+            tableLayoutPanel1.Controls.Add(price_label, 2, 0);
+            tableLayoutPanel1.Controls.Add(price_textBox, 3, 0);
+            tableLayoutPanel1.Controls.Add(cover_label, 2, 1);
+            tableLayoutPanel1.Controls.Add(cover_textBox, 3, 1);
             tableLayoutPanel1.Location = new Point(43, 56);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 3;
@@ -226,7 +222,7 @@
             cover_label.AutoSize = true;
             cover_label.Font = new Font("Candara", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cover_label.ForeColor = Color.PapayaWhip;
-            cover_label.Location = new Point(323, 116);
+            cover_label.Location = new Point(323, 65);
             cover_label.Name = "cover_label";
             cover_label.Size = new Size(66, 23);
             cover_label.TabIndex = 11;
@@ -237,7 +233,7 @@
             cover_textBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             cover_textBox.BackColor = Color.PapayaWhip;
             cover_textBox.Font = new Font("Candara", 12F);
-            cover_textBox.Location = new Point(423, 114);
+            cover_textBox.Location = new Point(423, 63);
             cover_textBox.Name = "cover_textBox";
             cover_textBox.Size = new Size(216, 27);
             cover_textBox.TabIndex = 10;
@@ -248,7 +244,7 @@
             isbn_label.AutoSize = true;
             isbn_label.Font = new Font("Candara", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             isbn_label.ForeColor = Color.PapayaWhip;
-            isbn_label.Location = new Point(3, 116);
+            isbn_label.Location = new Point(3, 65);
             isbn_label.Name = "isbn_label";
             isbn_label.Size = new Size(58, 23);
             isbn_label.TabIndex = 15;
@@ -259,7 +255,7 @@
             isbn_textBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             isbn_textBox.BackColor = Color.PapayaWhip;
             isbn_textBox.Font = new Font("Candara", 12F);
-            isbn_textBox.Location = new Point(103, 114);
+            isbn_textBox.Location = new Point(103, 63);
             isbn_textBox.Name = "isbn_textBox";
             isbn_textBox.Size = new Size(214, 27);
             isbn_textBox.TabIndex = 14;
@@ -270,7 +266,7 @@
             price_label.AutoSize = true;
             price_label.Font = new Font("Candara", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             price_label.ForeColor = Color.PapayaWhip;
-            price_label.Location = new Point(323, 65);
+            price_label.Location = new Point(323, 14);
             price_label.Name = "price_label";
             price_label.Size = new Size(60, 23);
             price_label.TabIndex = 13;
@@ -281,32 +277,10 @@
             price_textBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             price_textBox.BackColor = Color.PapayaWhip;
             price_textBox.Font = new Font("Candara", 12F);
-            price_textBox.Location = new Point(423, 63);
+            price_textBox.Location = new Point(423, 12);
             price_textBox.Name = "price_textBox";
             price_textBox.Size = new Size(216, 27);
             price_textBox.TabIndex = 12;
-            // 
-            // author_label
-            // 
-            author_label.Anchor = AnchorStyles.Left;
-            author_label.AutoSize = true;
-            author_label.Font = new Font("Candara", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            author_label.ForeColor = Color.PapayaWhip;
-            author_label.Location = new Point(3, 65);
-            author_label.Name = "author_label";
-            author_label.Size = new Size(76, 23);
-            author_label.TabIndex = 11;
-            author_label.Text = "Author :";
-            // 
-            // author_textBox
-            // 
-            author_textBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            author_textBox.BackColor = Color.PapayaWhip;
-            author_textBox.Font = new Font("Candara", 12F);
-            author_textBox.Location = new Point(103, 63);
-            author_textBox.Name = "author_textBox";
-            author_textBox.Size = new Size(214, 27);
-            author_textBox.TabIndex = 10;
             // 
             // category_label
             // 
@@ -314,7 +288,7 @@
             category_label.AutoSize = true;
             category_label.Font = new Font("Candara", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             category_label.ForeColor = Color.PapayaWhip;
-            category_label.Location = new Point(323, 14);
+            category_label.Location = new Point(3, 116);
             category_label.Name = "category_label";
             category_label.Size = new Size(92, 23);
             category_label.TabIndex = 9;
@@ -350,12 +324,11 @@
             comboBox1.Font = new Font("Candara", 14.25F);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Horror", "Science Fiction", "Romance", "Mystery" });
-            comboBox1.Location = new Point(423, 10);
+            comboBox1.Location = new Point(103, 112);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(216, 31);
+            comboBox1.Size = new Size(214, 31);
             comboBox1.TabIndex = 16;
             comboBox1.Text = "Mystery";
-            
             // 
             // label2
             // 
@@ -424,8 +397,6 @@
         private TextBox isbn_textBox;
         private Label price_label;
         private TextBox price_textBox;
-        private Label author_label;
-        private TextBox author_textBox;
         private Label category_label;
         private Label title_label;
         private TextBox title_textBox;

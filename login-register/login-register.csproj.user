@@ -16,6 +16,9 @@
     <Compile Update="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="placeHolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="registerForm.cs">
       <SubType>Form</SubType>
     </Compile>
