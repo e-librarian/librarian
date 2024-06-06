@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chmas\\Source\\Repos\\ProjectWorking-v1\\login-register\\login-register.csproj": {}
+    "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\login-register\\login-register.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chmas\\Source\\Repos\\ProjectWorking-v1\\login-register\\login-register.csproj": {
+    "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\login-register\\login-register.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chmas\\Source\\Repos\\ProjectWorking-v1\\login-register\\login-register.csproj",
+        "projectUniqueName": "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\login-register\\login-register.csproj",
         "projectName": "login-register",
-        "projectPath": "C:\\Users\\chmas\\Source\\Repos\\ProjectWorking-v1\\login-register\\login-register.csproj",
+        "projectPath": "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\login-register\\login-register.csproj",
         "packagesPath": "C:\\Users\\chmas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chmas\\Source\\Repos\\ProjectWorking-v1\\login-register\\obj\\",
+        "outputPath": "C:\\Users\\chmas\\Source\\Repos\\1st-Working-Version\\login-register\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chmas\\AppData\\Roaming\\NuGet\\NuGet.Config"

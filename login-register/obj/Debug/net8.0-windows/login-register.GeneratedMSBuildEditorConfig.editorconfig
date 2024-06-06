@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = login_register
-build_property.ProjectDir = C:\Users\chmas\OneDrive\Υπολογιστής\Bookstore_Project\projectV1\login-register\
+build_property.ProjectDir = C:\Users\chmas\source\repos\1st-Working-Version\login-register\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

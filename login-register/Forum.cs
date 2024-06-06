@@ -17,7 +17,8 @@ namespace login_register
         {
             InitializeComponent();
             this.book = book;
-            forumLabel1.Text = String.Format("Forum for: {0}", book.title);
+            //forumLabel1.Text = String.Format("Forum for: {0}", book.title);
+            coverPictureBox.Load(book.cover);
         }
     }
 }
