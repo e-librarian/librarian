@@ -52,9 +52,9 @@
             flowLayoutPanel1.AutoScroll = true;
             flowLayoutPanel1.BackColor = Color.FromArgb(73, 60, 52);
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel1.Location = new Point(696, 37);
+            flowLayoutPanel1.Location = new Point(696, 42);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(580, 676);
+            flowLayoutPanel1.Size = new Size(580, 766);
             flowLayoutPanel1.TabIndex = 1;
             flowLayoutPanel1.WrapContents = false;
             // 
@@ -66,9 +66,9 @@
             panel2.Controls.Add(new_comment);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(12, 401);
+            panel2.Location = new Point(12, 454);
             panel2.Name = "panel2";
-            panel2.Size = new Size(477, 184);
+            panel2.Size = new Size(477, 208);
             panel2.TabIndex = 3;
             // 
             // timestamp_label
@@ -78,7 +78,7 @@
             timestamp_label.Cursor = Cursors.Hand;
             timestamp_label.Font = new Font("Candara", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             timestamp_label.ForeColor = Color.Tan;
-            timestamp_label.Location = new Point(300, 20);
+            timestamp_label.Location = new Point(300, 23);
             timestamp_label.Name = "timestamp_label";
             timestamp_label.Size = new Size(98, 23);
             timestamp_label.TabIndex = 35;
@@ -90,9 +90,9 @@
             new_comment.BorderStyle = BorderStyle.None;
             new_comment.Font = new Font("Candara", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             new_comment.ForeColor = Color.FromArgb(73, 60, 52);
-            new_comment.Location = new Point(9, 49);
+            new_comment.Location = new Point(9, 56);
             new_comment.Name = "new_comment";
-            new_comment.Size = new Size(451, 108);
+            new_comment.Size = new Size(451, 122);
             new_comment.TabIndex = 34;
             new_comment.Text = "";
             // 
@@ -101,7 +101,7 @@
             pictureBox1.BackColor = Color.FromArgb(73, 60, 52);
             pictureBox1.Location = new Point(9, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(40, 40);
+            pictureBox1.Size = new Size(40, 45);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 28;
             pictureBox1.TabStop = false;
@@ -113,7 +113,7 @@
             label3.Cursor = Cursors.Hand;
             label3.Font = new Font("Candara", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.PapayaWhip;
-            label3.Location = new Point(55, 12);
+            label3.Location = new Point(55, 14);
             label3.Name = "label3";
             label3.Size = new Size(65, 26);
             label3.TabIndex = 27;
@@ -126,11 +126,11 @@
             label2.Cursor = Cursors.Hand;
             label2.Font = new Font("Candara", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(73, 60, 52);
-            label2.Location = new Point(12, 359);
+            label2.Location = new Point(12, 407);
             label2.Name = "label2";
-            label2.Size = new Size(165, 26);
+            label2.Size = new Size(176, 26);
             label2.TabIndex = 36;
-            label2.Text = "Make a Question";
+            label2.Text = "Κάνε μια ερώτηση";
             // 
             // postReviewButton
             // 
@@ -138,11 +138,11 @@
             postReviewButton.FlatStyle = FlatStyle.Flat;
             postReviewButton.Font = new Font("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             postReviewButton.ForeColor = Color.PapayaWhip;
-            postReviewButton.Location = new Point(263, 602);
+            postReviewButton.Location = new Point(263, 682);
             postReviewButton.Name = "postReviewButton";
-            postReviewButton.Size = new Size(226, 36);
+            postReviewButton.Size = new Size(226, 41);
             postReviewButton.TabIndex = 37;
-            postReviewButton.Text = "Post";
+            postReviewButton.Text = "Δημοσίευση";
             postReviewButton.UseVisualStyleBackColor = false;
             postReviewButton.Click += postReviewButton_Click;
             // 
@@ -151,9 +151,9 @@
             coverPictureBox.BackColor = Color.Black;
             coverPictureBox.BackgroundImageLayout = ImageLayout.None;
             coverPictureBox.Image = Properties.Resources._71wM_BB9mtL__AC_UF1000_1000_QL80_;
-            coverPictureBox.Location = new Point(0, -4);
+            coverPictureBox.Location = new Point(0, -5);
             coverPictureBox.Name = "coverPictureBox";
-            coverPictureBox.Size = new Size(732, 347);
+            coverPictureBox.Size = new Size(732, 393);
             coverPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             coverPictureBox.TabIndex = 38;
             coverPictureBox.TabStop = false;
@@ -161,9 +161,9 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Black;
-            pictureBox2.Location = new Point(660, -4);
+            pictureBox2.Location = new Point(660, -5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(616, 347);
+            pictureBox2.Size = new Size(616, 393);
             pictureBox2.TabIndex = 39;
             pictureBox2.TabStop = false;
             // 
@@ -175,9 +175,9 @@
             button1.ForeColor = Color.PapayaWhip;
             button1.Location = new Point(696, -2);
             button1.Name = "button1";
-            button1.Size = new Size(188, 36);
+            button1.Size = new Size(188, 41);
             button1.TabIndex = 40;
-            button1.Text = "Show Answered";
+            button1.Text = "Έχουν απαντηθεί";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -189,9 +189,9 @@
             button2.ForeColor = Color.PapayaWhip;
             button2.Location = new Point(1096, -2);
             button2.Name = "button2";
-            button2.Size = new Size(180, 36);
+            button2.Size = new Size(180, 41);
             button2.TabIndex = 41;
-            button2.Text = "Show Unanswered";
+            button2.Text = "Χωρίς απάντηση";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
@@ -203,18 +203,18 @@
             button3.ForeColor = Color.PapayaWhip;
             button3.Location = new Point(890, -2);
             button3.Name = "button3";
-            button3.Size = new Size(200, 36);
+            button3.Size = new Size(200, 41);
             button3.TabIndex = 42;
-            button3.Text = "Show All";
+            button3.Text = "Όλες";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // Forum
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PapayaWhip;
-            ClientSize = new Size(1273, 716);
+            ClientSize = new Size(1273, 811);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);

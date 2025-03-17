@@ -129,6 +129,7 @@
             trackBar1.Name = "trackBar1";
             trackBar1.Size = new Size(131, 45);
             trackBar1.TabIndex = 36;
+            trackBar1.Scroll += trackBar1_Scroll;
             // 
             // label_mystery
             // 
@@ -185,9 +186,9 @@
             categoriesLabel.ForeColor = Color.White;
             categoriesLabel.Location = new Point(39, 27);
             categoriesLabel.Name = "categoriesLabel";
-            categoriesLabel.Size = new Size(103, 25);
+            categoriesLabel.Size = new Size(113, 25);
             categoriesLabel.TabIndex = 38;
-            categoriesLabel.Text = "Categories";
+            categoriesLabel.Text = "Κατηγορίες";
             // 
             // label5
             // 
@@ -197,9 +198,9 @@
             label5.ImageAlign = ContentAlignment.BottomCenter;
             label5.Location = new Point(3, 14);
             label5.Name = "label5";
-            label5.Size = new Size(490, 39);
+            label5.Size = new Size(361, 39);
             label5.TabIndex = 38;
-            label5.Text = "Your Journey Through Pages Begins Here";
+            label5.Text = "Κάθε σελίδα είναι ένα ταξίδι...";
             label5.TextAlign = ContentAlignment.MiddleCenter;
             label5.UseCompatibleTextRendering = true;
             // 

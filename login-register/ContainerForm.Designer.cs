@@ -47,7 +47,7 @@
             usernameLabel.Cursor = Cursors.Hand;
             usernameLabel.Font = new Font("Candara", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             usernameLabel.ForeColor = Color.PapayaWhip;
-            usernameLabel.Location = new Point(58, 30);
+            usernameLabel.Location = new Point(58, 34);
             usernameLabel.Name = "usernameLabel";
             usernameLabel.Size = new Size(65, 26);
             usernameLabel.TabIndex = 3;
@@ -57,9 +57,9 @@
             // pfpBox
             // 
             pfpBox.BackColor = Color.FromArgb(73, 60, 52);
-            pfpBox.Location = new Point(12, 21);
+            pfpBox.Location = new Point(12, 24);
             pfpBox.Name = "pfpBox";
-            pfpBox.Size = new Size(40, 40);
+            pfpBox.Size = new Size(40, 45);
             pfpBox.SizeMode = PictureBoxSizeMode.StretchImage;
             pfpBox.TabIndex = 26;
             pfpBox.TabStop = false;
@@ -72,9 +72,9 @@
             exitButton.FlatStyle = FlatStyle.Flat;
             exitButton.Font = new Font("Consolas", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             exitButton.ForeColor = Color.PapayaWhip;
-            exitButton.Location = new Point(1209, 21);
+            exitButton.Location = new Point(1209, 24);
             exitButton.Name = "exitButton";
-            exitButton.Size = new Size(35, 35);
+            exitButton.Size = new Size(35, 40);
             exitButton.TabIndex = 27;
             exitButton.Text = "X";
             exitButton.UseVisualStyleBackColor = false;
@@ -84,9 +84,9 @@
             // 
             panel1.AutoScroll = true;
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 82);
+            panel1.Location = new Point(0, 93);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1273, 716);
+            panel1.Size = new Size(1273, 811);
             panel1.TabIndex = 29;
             // 
             // panel2
@@ -100,7 +100,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1273, 82);
+            panel2.Size = new Size(1273, 93);
             panel2.TabIndex = 30;
             // 
             // bookLand
@@ -108,9 +108,9 @@
             bookLand.BackColor = Color.FromArgb(73, 60, 52);
             bookLand.Cursor = Cursors.Hand;
             bookLand.Image = Properties.Resources.text_1717247010360;
-            bookLand.Location = new Point(469, 21);
+            bookLand.Location = new Point(469, 24);
             bookLand.Name = "bookLand";
-            bookLand.Size = new Size(329, 50);
+            bookLand.Size = new Size(329, 57);
             bookLand.SizeMode = PictureBoxSizeMode.StretchImage;
             bookLand.TabIndex = 30;
             bookLand.TabStop = false;
@@ -122,19 +122,19 @@
             loginOrRegister.Cursor = Cursors.Hand;
             loginOrRegister.Font = new Font("Candara", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             loginOrRegister.ForeColor = Color.PapayaWhip;
-            loginOrRegister.Location = new Point(1077, 30);
+            loginOrRegister.Location = new Point(1077, 34);
             loginOrRegister.Name = "loginOrRegister";
-            loginOrRegister.Size = new Size(107, 26);
+            loginOrRegister.Size = new Size(108, 26);
             loginOrRegister.TabIndex = 29;
-            loginOrRegister.Text = "Logout 🔘";
+            loginOrRegister.Text = "Έξοδος 🔘";
             loginOrRegister.Click += loginOrRegister_Click;
             // 
             // ContainerForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PapayaWhip;
-            ClientSize = new Size(1273, 798);
+            ClientSize = new Size(1273, 904);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;

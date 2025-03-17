@@ -47,12 +47,12 @@
             label6.Cursor = Cursors.Hand;
             label6.Font = new Font("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(73, 60, 52);
-            label6.Location = new Point(98, 444);
+            label6.Location = new Point(60, 442);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(134, 23);
+            label6.Size = new Size(220, 23);
             label6.TabIndex = 23;
-            label6.Text = "Create Account";
+            label6.Text = "Δημιουργία Λογαριασμού";
             label6.Click += label6_Click;
             // 
             // label5
@@ -63,9 +63,9 @@
             label5.Location = new Point(87, 414);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(166, 19);
+            label5.Size = new Size(150, 19);
             label5.TabIndex = 22;
-            label5.Text = "Don't Have An Account";
+            label5.Text = "Δεν έχω λογαριασμό";
             label5.Click += label5_Click;
             // 
             // buttonClearLOGIN
@@ -80,7 +80,7 @@
             buttonClearLOGIN.Name = "buttonClearLOGIN";
             buttonClearLOGIN.Size = new Size(243, 39);
             buttonClearLOGIN.TabIndex = 21;
-            buttonClearLOGIN.Text = "CLEAR";
+            buttonClearLOGIN.Text = "ΕΚΚΑΘΑΡΙΣΗ";
             buttonClearLOGIN.UseVisualStyleBackColor = false;
             buttonClearLOGIN.Click += buttonClearLOGIN_Click;
             // 
@@ -97,7 +97,7 @@
             buttonLOGIN.Name = "buttonLOGIN";
             buttonLOGIN.Size = new Size(243, 39);
             buttonLOGIN.TabIndex = 20;
-            buttonLOGIN.Text = "LOGIN";
+            buttonLOGIN.Text = "ΕΙΣΟΔΟΣ";
             buttonLOGIN.UseVisualStyleBackColor = false;
             buttonLOGIN.Click += buttonLOGIN_Click;
             // 
@@ -108,12 +108,12 @@
             checkBoxShowPass.FlatStyle = FlatStyle.Flat;
             checkBoxShowPass.Font = new Font("Candara", 12F);
             checkBoxShowPass.ForeColor = Color.Tan;
-            checkBoxShowPass.Location = new Point(152, 239);
+            checkBoxShowPass.Location = new Point(49, 239);
             checkBoxShowPass.Margin = new Padding(2);
             checkBoxShowPass.Name = "checkBoxShowPass";
-            checkBoxShowPass.Size = new Size(133, 23);
+            checkBoxShowPass.Size = new Size(152, 23);
             checkBoxShowPass.TabIndex = 19;
-            checkBoxShowPass.Text = "Show Password";
+            checkBoxShowPass.Text = "Προβολή κωδικού";
             checkBoxShowPass.UseVisualStyleBackColor = true;
             checkBoxShowPass.CheckedChanged += checkBoxShowPass_CheckedChanged;
             // 
@@ -138,9 +138,9 @@
             label3.Location = new Point(46, 186);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(77, 19);
+            label3.Size = new Size(67, 19);
             label3.TabIndex = 15;
-            label3.Text = "Password";
+            label3.Text = "Κωδικός";
             // 
             // textBoxUserName
             // 
@@ -162,9 +162,9 @@
             label2.Location = new Point(46, 116);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(79, 19);
+            label2.Size = new Size(110, 19);
             label2.TabIndex = 13;
-            label2.Text = "Username";
+            label2.Text = "Όνομα χρήστη";
             // 
             // label1
             // 
@@ -174,9 +174,9 @@
             label1.Location = new Point(46, 51);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(125, 33);
+            label1.Size = new Size(220, 33);
             label1.TabIndex = 12;
-            label1.Text = "Bookland";
+            label1.Text = "e-Βιβλιοθηκάριος";
             label1.Click += label1_Click;
             // 
             // button1

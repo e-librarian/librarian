@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\form\\login-register\\login-register.csproj": {}
+    "C:\\Users\\mtimo\\source\\repos\\e-librarian\\librarian\\login-register\\login-register.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\form\\login-register\\login-register.csproj": {
+    "C:\\Users\\mtimo\\source\\repos\\e-librarian\\librarian\\login-register\\login-register.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\form\\login-register\\login-register.csproj",
+        "projectUniqueName": "C:\\Users\\mtimo\\source\\repos\\e-librarian\\librarian\\login-register\\login-register.csproj",
         "projectName": "login-register",
-        "projectPath": "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\form\\login-register\\login-register.csproj",
-        "packagesPath": "C:\\Users\\chmas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chmas\\source\\repos\\1st-Working-Version\\form\\login-register\\obj\\",
+        "projectPath": "C:\\Users\\mtimo\\source\\repos\\e-librarian\\librarian\\login-register\\login-register.csproj",
+        "packagesPath": "C:\\Users\\mtimo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mtimo\\source\\repos\\e-librarian\\librarian\\login-register\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\chmas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\mtimo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -71,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -224,5 +224,10 @@ namespace login_register
                 AddBookToUI(book);
             }
         }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+
+        }
     }
 }

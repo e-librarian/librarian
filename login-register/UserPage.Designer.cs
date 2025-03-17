@@ -41,7 +41,7 @@
             fullNameLabel.AutoSize = true;
             fullNameLabel.Font = new Font("Candara", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             fullNameLabel.ForeColor = Color.PapayaWhip;
-            fullNameLabel.Location = new Point(148, 240);
+            fullNameLabel.Location = new Point(148, 272);
             fullNameLabel.Name = "fullNameLabel";
             fullNameLabel.Size = new Size(204, 36);
             fullNameLabel.TabIndex = 0;
@@ -49,9 +49,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(30, 240);
+            pictureBox1.Location = new Point(30, 272);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 100);
+            pictureBox1.Size = new Size(100, 113);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -62,7 +62,7 @@
             usernameLabel.AutoSize = true;
             usernameLabel.Font = new Font("Candara", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             usernameLabel.ForeColor = Color.PapayaWhip;
-            usernameLabel.Location = new Point(148, 276);
+            usernameLabel.Location = new Point(148, 313);
             usernameLabel.Name = "usernameLabel";
             usernameLabel.Size = new Size(109, 23);
             usernameLabel.TabIndex = 3;
@@ -73,17 +73,17 @@
             profCover.Image = Properties.Resources.profCover;
             profCover.Location = new Point(0, -3);
             profCover.Name = "profCover";
-            profCover.Size = new Size(1273, 218);
+            profCover.Size = new Size(1273, 247);
             profCover.SizeMode = PictureBoxSizeMode.StretchImage;
             profCover.TabIndex = 4;
             profCover.TabStop = false;
             // 
             // UserPage
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
-            ClientSize = new Size(1089, 602);
+            ClientSize = new Size(1089, 682);
             Controls.Add(profCover);
             Controls.Add(usernameLabel);
             Controls.Add(fullNameLabel);

@@ -34,7 +34,7 @@ namespace login_register
             buyButton.Text = "Buy: " + book.price.ToString() + "€";
 
             //Reviews
-            List<Review> reviews = Review.GetReviews("SELECT * FROM reviews WHERE isbn='"+book.isbn+"';");
+            List<Review> reviews = Review.GetReviews("SELECT * FROM reviews WHERE isbn='" + book.isbn + "';");
             for (int i = 0; i < reviews.Count; i++)
             {
                 AddReviewToUI(reviews[i]);
@@ -183,10 +183,10 @@ namespace login_register
             panel1.Controls.Add(pfpBox);
             panel1.Controls.Add(usernameLabel);
         }
-                                                                                                   
+
         private void label2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void star1_Click(object sender, EventArgs e)
@@ -282,7 +282,7 @@ namespace login_register
                     AddReviewToUI(reviews[i]);
                 }
             }
-            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             TransactionPage transactionPage = new TransactionPage(this.book);
@@ -297,6 +297,11 @@ namespace login_register
             this.containerForm.LoadForm(forum);
             this.containerForm.Show();
             this.Close();
+        }
+
+        private void bookTitle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
